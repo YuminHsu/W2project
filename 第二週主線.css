@@ -1,0 +1,202 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*CSS Reset結束*/
+
+body{
+    width: 940px;
+    margin:0px auto;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header h1 a{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg);
+    height: 72px;
+    width: 220px;
+    background-repeat: no-repeat;
+    background-position:center;
+    /*圖片取代文字*/
+    text-indent: 101%; /*縮排語法，設定 101% 讓 a 連結的文字超出圖片範圍*/
+    overflow: hidden; /*再用 overflow 隱藏多出來的文字*/
+    white-space: nowrap; /*讓文字不換行 */
+}
+
+
+.header ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header li a{
+    padding: 0px 30px;
+    font-size: 16px;
+    line-height: 72px;
+    color: #3F5D45;
+}
+
+.banner{
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    width: 33%;
+    margin-right: 20px;
+}
+
+.main .menu h2{
+    background-color: #3F5D45;
+    color: #EAF0ED;
+    text-align: center;
+    font-size: 24px;
+    line-height: 65px;
+}
+
+.main .menu li a{
+    border: 1px #EAF0ED solid;
+    color: #3F5D45;
+    text-align: center;
+    font-size: 24px;
+    line-height: 65px;
+}
+
+.main .menu li:hover, .header li:hover{
+    background-color: #EAF0ED;
+}
+
+.contant{
+    width: 66%;
+}
+
+.contant .items ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contant .items li{
+    width: 48%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative; /*以此為坐標定位*/
+}
+
+.contant .items li h4{
+    width: 49.3%;
+    font-size: 20px;
+    color: #3F5D45;
+    line-height: 56px;
+    text-align: center;
+    border-style: solid;
+    border-color: #EAF0ED;
+    border-width: 0px 1px;
+}
+
+.contant .items li button{
+    font-size: 24px;
+    color: #3F5D45;
+    text-align: center;
+    width: 100%;
+    line-height: 65px;
+    background-color: #EAF0ED;
+    border: #EAF0ED 1px solid;
+}
+
+.contant .items li .special{
+    background: #3F5D45;
+    color: #EAF0ED;
+    position: absolute; /*依父元素絕對定位*/
+    left: 20px;
+    writing-mode: vertical-lr ; /*垂直文字由左到右*/
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 6px;
+    padding: 10px;
+}
+
+.contant .items li .fav{
+    position: absolute;
+    top: 19px;
+    right: 22px;
+}
+
+.contant .pages ul{
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.contant .pages a{
+    width: 60px;
+    height: 60px;
+    border: #EAF0ED 1px solid;
+    font-size: 20px;
+    line-height: 60px;
+    text-align: center;
+    color: #3F5D45;
+}
+
+.contant .pages a:hover{
+    background-color: #3F5D45;
+    color: #EAF0ED;
+}
